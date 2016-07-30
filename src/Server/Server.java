@@ -11,7 +11,8 @@ class Server {
 		DatagramSocket serverSocket = new DatagramSocket(9098);  
 		byte[] receiveData = new byte[1024];   
 		//byte[] sendData = new byte[1024];
-				
+		
+		//need to thread this
 		while(true)             
 		{                 
 			DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);  
